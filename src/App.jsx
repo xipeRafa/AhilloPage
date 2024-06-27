@@ -26,15 +26,48 @@ import VisitaPastoral from './pages/VisitaPastoral';
 import Navbar from './components/Navbar';
 //import Search from './components/Search';
 
+import { getDocs,collection} from 'firebase/firestore'
+import db from './firebase/firebaseConfig'
+import { useState, useEffect } from 'react';
+
+
 
 
 export default function App() {
   const location = useLocation();
   console.log(location.pathname);
 
+
+
+
+const [first, setfirst] = useState([])
+
+useEffect(() => {
+  const data = collection(db, 'auctions')
+  getDocs(data).then((resp)=>{
+    //console.log(resp.docs[0].id)
+    //console.log(resp.docs[0].data())
+
+setfirst(
+    resp.docs.map((doc)=>{
+            return {...doc.data(), id:doc.id }
+          })
+        
+        )
+  })
+
+}, [])
+
+
+
+
+
   return (
     <div>
       <Navbar />
+    {first.map((el,i)=>(
+      <p key={i}>{el.nombre}</p>
+    ))}
 
   {/*     {location.pathname === '/' ? (
         <Link to="/">HOME</Link>
