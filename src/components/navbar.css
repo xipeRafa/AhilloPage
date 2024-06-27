@@ -1,6 +1,6 @@
 body {
   font-family: sans-serif;
-  background-color: rgba(228, 225, 214, 0.635);
+  background-color: rgba(224, 222, 213, 0.281);
   color: rgb(44, 48, 51);
   margin: 0;padding: 0;
 
@@ -9,6 +9,9 @@ a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   margin: 10px;
+}
+.active{
+  color: rgba(149, 17, 17, 0.551);
 }
 
 
@@ -112,6 +115,7 @@ padding: 20px;
   justify-content:space-between;
   height: auto;
   border-bottom: 1px solid gray;
+  font-weight: 100;
 }
 .item:first-child {
   margin-top: 0;
