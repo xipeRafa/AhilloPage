@@ -13,7 +13,7 @@ import NotFoundPage from './pages/NotFoundPage';
 import Inicio from './pages/Inicio';
 import InformacionPage from './pages/InformacionPage';
 import Gobierno from './pages/Gobierno'
-import Directorio from './pages/Directorio'
+import Directorio from './pages/directorio/Directorio'
 import Documentos from './pages/Documentos'
 import Blog from './pages/Blog'
 import Galeria from './pages/Galeria'
@@ -24,7 +24,7 @@ import VisitaPastoral from './pages/VisitaPastoral';
 //import UserPage from './pages/UserPage';
 
 import Navbar from './components/Navbar';
-import Parroquias from './pages/Parroquias';
+import Parroquias from './pages/directorio/Parroquias';
 //import Search from './components/Search';
 
 
