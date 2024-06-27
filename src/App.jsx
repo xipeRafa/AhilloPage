@@ -24,11 +24,10 @@ import VisitaPastoral from './pages/VisitaPastoral';
 //import UserPage from './pages/UserPage';
 
 import Navbar from './components/Navbar';
+import Parroquias from './pages/Parroquias';
 //import Search from './components/Search';
 
-import { getDocs,collection} from 'firebase/firestore'
-import db from './firebase/firebaseConfig'
-import { useState, useEffect } from 'react';
+
 
 
 
@@ -40,23 +39,7 @@ export default function App() {
 
 
 
-const [first, setfirst] = useState([])
-
-useEffect(() => {
-  const data = collection(db, 'auctions')
-  getDocs(data).then((resp)=>{
-    //console.log(resp.docs[0].id)
-    //console.log(resp.docs[0].data())
-
-setfirst(
-    resp.docs.map((doc)=>{
-            return {...doc.data(), id:doc.id }
-          })
-        
-        )
-  })
-
-}, [])
+ 
 
 
 
@@ -64,12 +47,13 @@ setfirst(
 
   return (
     <div>
+      <p>Bienvenidos al Sitio Oficial de la Arquidiócesis de Hermosillo</p>
+      <h1>Arquidiócesis de Hermosillo</h1>
       <Navbar />
-    {first.map((el,i)=>(
-      <p key={i}>{el.nombre}</p>
-    ))}
 
-  {/*     {location.pathname === '/' ? (
+ 
+
+      {/*     {location.pathname === '/' ? (
         <Link to="/">HOME</Link>
       ) : (
         <Link to="/search" className="search">
@@ -82,10 +66,10 @@ setfirst(
 
       <Routes>
         <Route path="/" exact element={<Inicio />} />
-       {/*  <Route path="/search" element={<Search />} /> */}
+        {/*  <Route path="/search" element={<Search />} /> */}
         <Route path="/Informacion" element={<InformacionPage />} />
 
-     {/*    <Route path="/users/*" element={<UserPage />} />
+        {/*    <Route path="/users/*" element={<UserPage />} />
         <Route path="/users" element={<UsersPage />} />
         <Route path="/users/:id" element={<UserPage />} />
 2
@@ -93,29 +77,30 @@ setfirst(
 
         <Route path="/usuarios/" element={<Navigate to="/users" />} /> */}
 
-       {/*  <Route path="/gobierno" element={<DashboardPage />}>
+        {/*  <Route path="/gobierno" element={<DashboardPage />}>
 
 
           <Route path="welcome" element={<p>Welcome! in Outled ---componente nuevo</p>} />
           <Route path="goodbye" element={<p>goodbye! in Outlet</p>} />
         </Route> */}
 
-<Route path="/gobierno" element={<Gobierno />} />
-<Route path="/directorio" element={<Directorio />} />
+        <Route path="/gobierno" element={<Gobierno />} />
+        <Route path="/directorio" element={<Directorio />} />
 
-<Route path="/documentos" element={<Documentos />} /> 
+        <Route path="/documentos" element={<Documentos />} />
 
-<Route path="/blog" element={<Blog />} />
-<Route path="/galeria" element={<Galeria />} />
-<Route path="/diezmo" element={<Diezmo />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/galeria" element={<Galeria />} />
+        <Route path="/diezmo" element={<Diezmo />} />
 
-<Route path="/contacto" element={<Contacto />} />
-<Route path="/VisitaPastoral" element={<VisitaPastoral />} />
+        <Route path="/contacto" element={<Contacto />} />
+        <Route path="/VisitaPastoral" element={<VisitaPastoral />} />
+        <Route path="/parroquias" element={<Parroquias />} />
 
 
 
 
-        <Route path="*" element={<NotFoundPage />} /> 
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </div>
   );

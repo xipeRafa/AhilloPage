@@ -1,5 +1,6 @@
 body {
-  background-color: rgb(168, 176, 192);
+  font-family: sans-serif;
+  background-color: rgba(228, 225, 214, 0.635);
   color: rgb(44, 48, 51);
   margin: 0;padding: 0;
 
@@ -19,7 +20,7 @@ a {
   display: flex;
   justify-content: space-evenly;
   padding: 10px;
-  background-color: rgba(157, 183, 229, 0.438);
+  background-color: rgb(114, 150, 214);
   width: 87.3%;
   margin-left: 5.2%;
 
@@ -54,12 +55,23 @@ a {
 
 
 
+
 @media (max-width: 1000px) {
   .menu {
     flex-direction: row;
     width: 100%;
     margin-left: 0;
     transform: translate(-600%);
+  }
+  .item{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .texto{
+    padding-left: 4px;
+    border-top: 1px solid gray;
+    text-align: center;
   }
 }
 
@@ -69,6 +81,7 @@ a {
   }
 
 }
+
 
 
 
@@ -90,4 +103,45 @@ padding: 20px;
 } 
 
 
+.item{
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 110px;
+  padding: 4px;
+  display:flex;
+  justify-content:space-between;
+  height: auto;
+  border-bottom: 1px solid gray;
+}
+.item:first-child {
+  margin-top: 0;
+}
 
+.img{
+  width: 290px;
+}
+
+img{
+  width: 100%;
+}
+
+
+
+.texto{
+  padding-left: 4px;
+    border-top: 1px solid gray;
+    text-align: left;
+  
+}
+
+
+
+
+
+
+
+.parroquias{
+  color:rgba(51, 51, 51, 0.742);
+  font-weight: bold;
+  font-size: 20px;
+}
