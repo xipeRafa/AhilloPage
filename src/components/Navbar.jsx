@@ -14,7 +14,6 @@ export default function Navbar() {
   const InWidth =()=>{
     if(windowWidth<999){
       setIsActive(true)
-      console.log(windowWidth)
     }
   }
 
