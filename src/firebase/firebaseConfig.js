@@ -25,15 +25,7 @@ const app = firebase.initializeApp({
     appId: `${ process.env.REACT_APP_APP_ID }` */
 });
 
-/* export const getFirebase = () => {
-    return app;
-}
 
-export const getFirestore = () => {
-    return firebase.firestore(app);
-};
-const docRef = firebase.firestore().doc();
-getDoc(docRef); */
 
 
 const db = getFirestore(app)
