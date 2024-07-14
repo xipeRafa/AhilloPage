@@ -1,0 +1,24 @@
+html{
+	background-color: rgb(249, 235, 234);
+   	overflow-x: hidden;
+   	font-family: sans-serif;
+   	padding: 0;
+   	margin: 0;
+   	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#root{
+	display: flex;
+	justify-content: center;
+}
+
+.containerApp{
+	width: 90%;
+	box-sizing: border-box;
+}

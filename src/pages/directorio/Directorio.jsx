@@ -16,9 +16,9 @@ export default function Directorio() {
 
   return (
 
-    <div className="container">
+    <div className="directorio">
       <div className="itemDirectorio" onClick={handleClick}>
-          <NavLink className='parroquias' to="/parroquias">4.- Parroquias y Decanatos</NavLink>
+          <NavLink className='parroquiasDirectorio' to="/parroquias">4.- Parroquias y Decanatos</NavLink>
       </div>
     </div>
 

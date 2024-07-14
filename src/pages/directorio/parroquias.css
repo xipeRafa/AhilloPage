@@ -1,0 +1,28 @@
+.parroquias {
+	font-family: sans-serif;
+	padding: 4px;
+}
+
+.parroquias h5 {
+	font-weight: bolder;
+}
+
+.parroquias p {
+	font-weight: lighter;
+	color: Black;
+}
+
+.parroquias p span {
+	font-weight: bold;
+	color: rgb(80, 80, 80);
+}
+
+.imgParroquias {
+	height: 180px;
+	background: no-repeat center;
+	background-size: contain;
+}
+
+.listParroquias {
+	padding: 10px;
+}

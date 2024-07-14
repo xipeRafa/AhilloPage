@@ -1,11 +1,11 @@
-.container {
+.directorio {
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
 .itemDirectorio {
-    text-align: 'left';
+    text-align: 'center';
     width: 350px;
     height: 190px;
     padding-top: 10px;
@@ -14,7 +14,11 @@
     background-size: contain;
 }
 
-.parroquias {
+.itemDirectorio a{
+    text-decoration: none;
+}
+
+.parroquiasDirectorio {
     color: rgba(51, 51, 51, 0.742);
     font-weight: bold;
     font-size: 20px;

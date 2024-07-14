@@ -1,5 +1,4 @@
 
-//import './style.css';
 import {
   //Link,
   //Navigate,
@@ -46,7 +45,7 @@ export default function App() {
 
 
   return (
-    <div>
+    <div className='containerApp'>
       <p>Bienvenidos al Sitio Oficial de la Arquidiócesis de Hermosillo</p>
       <h1>Arquidiócesis de Hermosillo</h1>
       <Navbar />
