@@ -122,7 +122,7 @@ export default function Parroquias() {
 
             {Object.keys(item.centros).sort().map((el, i) => (
                 <p key={i + "koko"}>
-                  {el}:<span> {item.centros[el]}</span>
+                  {el.slice(1).replace("_", " ").replace("_", " ")}:<span> {item.centros[el]}</span>
                 </p>
               ))}
 
@@ -130,7 +130,7 @@ export default function Parroquias() {
 
             {Object.keys(item.grupos).sort().map((el, i) => (
                 <p key={i + "kok"}>
-                  {el}:<span> {item.grupos[el]}</span>
+                  {el.slice(2).replace("_", " ").replace("_", " ")}:<span> {item.grupos[el]}</span>
                 </p>
               ))}
 
