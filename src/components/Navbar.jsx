@@ -28,19 +28,19 @@ export default function Navbar() {
 
             <div className={isActive ? "menu " : "menu display"} onClick={InWidth}>
 
-                <NavLink to="/"> Inicio </NavLink>
-                <NavLink to="/informacion"> Información </NavLink>
-                <NavLink to="/gobierno">    Gobierno </NavLink>
+                <NavLink to="/AhilloPage"> Inicio </NavLink>
+                <NavLink to="/AhilloPage/informacion"> Información </NavLink>
+                <NavLink to="/AhilloPage/gobierno">    Gobierno </NavLink>
 
-                <NavLink to="/directorio"> Directorio </NavLink>
-                <NavLink to="/documentos"> Documentos </NavLink>
-                <NavLink to="/blog">       Blog </NavLink>
+                <NavLink to="/AhilloPage/directorio"> Directorio </NavLink>
+                <NavLink to="/AhilloPage/documentos"> Documentos </NavLink>
+                <NavLink to="/AhilloPage/blog">       Blog </NavLink>
 
-                <NavLink to="/galeria">  Galeria </NavLink>
-                <NavLink to="/diezmo">   Diezmo </NavLink>
-                <NavLink to="/contacto"> Contacto </NavLink>
+                <NavLink to="/AhilloPage/galeria">  Galeria </NavLink>
+                <NavLink to="/AhilloPage/diezmo">   Diezmo </NavLink>
+                <NavLink to="/AhilloPage/contacto"> Contacto </NavLink>
 
-                <NavLink to="/visitaPastoral"> Visita pastoral </NavLink>
+                <NavLink to="/AhilloPage/visitaPastoral"> Visita pastoral </NavLink>
 
             </div>
         </div>

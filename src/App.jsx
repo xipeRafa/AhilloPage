@@ -64,9 +64,9 @@ export default function App() {
       <br />
 
       <Routes>
-        <Route path="/" exact element={<Inicio />} />
+        <Route path="/AhilloPage" exact element={<Inicio />} />
         {/*  <Route path="/search" element={<Search />} /> */}
-        <Route path="/Informacion" element={<InformacionPage />} />
+        <Route path="/AhilloPage/Informacion" element={<InformacionPage />} />
 
         {/*    <Route path="/users/*" element={<UserPage />} />
         <Route path="/users" element={<UsersPage />} />
@@ -83,23 +83,23 @@ export default function App() {
           <Route path="goodbye" element={<p>goodbye! in Outlet</p>} />
         </Route> */}
 
-        <Route path="/gobierno" element={<Gobierno />} />
-        <Route path="/directorio" element={<Directorio />} />
+        <Route path="/AhilloPage/gobierno" element={<Gobierno />} />
+        <Route path="/AhilloPage/directorio" element={<Directorio />} />
 
-        <Route path="/documentos" element={<Documentos />} />
+        <Route path="/AhilloPage/documentos" element={<Documentos />} />
 
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/galeria" element={<Galeria />} />
-        <Route path="/diezmo" element={<Diezmo />} />
+        <Route path="/AhilloPage/blog" element={<Blog />} />
+        <Route path="/AhilloPage/galeria" element={<Galeria />} />
+        <Route path="/AhilloPage/diezmo" element={<Diezmo />} />
 
-        <Route path="/contacto" element={<Contacto />} />
-        <Route path="/VisitaPastoral" element={<VisitaPastoral />} />
-        <Route path="/parroquias" element={<Parroquias />} />
-
-
+        <Route path="/AhilloPage/contacto" element={<Contacto />} />
+        <Route path="/AhilloPage/VisitaPastoral" element={<VisitaPastoral />} />
+        <Route path="/AhilloPage/parroquias" element={<Parroquias />} />
 
 
-        <Route path="*" element={<NotFoundPage />} />
+
+
+        <Route path="*" element={ <Inicio />} />
       </Routes>
     </div>
   );
