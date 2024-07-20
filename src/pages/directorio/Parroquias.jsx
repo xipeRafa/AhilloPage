@@ -59,6 +59,9 @@ export default function Parroquias() {
               Direccion:<span> {item.direccion}</span>
             </p>
             <p>
+              Horario de Oficina:<span> {item.oficina}</span>
+            </p>
+            <p>
               Telefono:<span> {item.telefono}</span>
             </p>
 
