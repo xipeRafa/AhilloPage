@@ -8,7 +8,7 @@ export default function Directorio() {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/parroquias', {
+    navigate('/AhilloPage/parroquias', {
       //replace: true,
     });
   };
@@ -18,7 +18,7 @@ export default function Directorio() {
 
     <div className="directorio">
       <div className="itemDirectorio" onClick={handleClick}>
-          <NavLink className='parroquiasDirectorio' to="/parroquias">4.- Parroquias y Decanatos</NavLink>
+          <NavLink className='parroquiasDirectorio' to="/AhilloPage/parroquias">4.- Parroquias y Decanatos</NavLink>
       </div>
     </div>
 
