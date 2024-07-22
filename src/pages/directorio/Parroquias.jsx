@@ -124,20 +124,18 @@ export default function Parroquias() {
             <hr />
 
             {Object.keys(item.centros).sort().map((el, i) => (
-                <p key={i + "koko"}>
-                  {el.slice(1).replace("_", " ").replace("_", " ")}:<span> {item.centros[el]}</span>
-                </p>
+                <div key={i + "koko"} className='borderX'>
+                  <p>{el.slice(2).replace("_", " ").replace("_", " ").replace("_", " ")}:<span> {item.centros[el]}</span></p>
+                </div>
               ))}
 
-            <hr />
 
             {Object.keys(item.grupos).sort().map((el, i) => (
-                <p key={i + "kok"}>
-                  {el.slice(2).replace("_", " ").replace("_", " ")}:<span> {item.grupos[el]}</span>
-                </p>
+                <div key={i + "kok"} className='borderX'>
+                  <p>{el.slice(2).replace("_", " ").replace("_", " ").replace("_", " ")}:<span> {item.grupos[el]}</span></p>
+                </div>
               ))}
 
-            <hr />
 
             <p>
               Comentarios:<span> {item.comentarios}</span>
