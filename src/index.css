@@ -27,3 +27,27 @@ body{
     border-bottom: 1px solid rgb(175, 187, 199);
     padding-bottom: 16px;
 }
+.h1-Arquidiócesis{
+	font-size: 36px;
+	color: #ad8a1f;
+	font-style: italic;
+	padding-bottom: 6px;
+}
+
+@media (max-width: 800px) {
+    .h1-Arquidiócesis {
+        font-size: 22px;
+    }
+}
+
+.p-Bienvenidos{
+	font-size: 14px;
+	color: gray;
+}
+
+.hr-App{
+	height: 1px;
+	border: 0;
+	color: #666;
+	background-color: rgba(128, 128, 128, 0.142);
+}

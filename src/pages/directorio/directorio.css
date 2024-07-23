@@ -6,9 +6,10 @@
 
 .itemDirectorio {
     text-align: 'center';
-    width: 350px;
+    width: 340px;
     height: 190px;
     padding-top: 10px;
+    padding-left: 16px;
     cursor: pointer;
     background-image: url(https://www.arquidiocesisdehermosillo.org/media/com_mtree/images/cats/o/84_catedral.jpg);
     background-size: contain;

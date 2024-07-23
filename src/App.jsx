@@ -46,8 +46,10 @@ export default function App() {
 
   return (
     <div className='containerApp'>
-      <p>Bienvenidos al Sitio Oficial de la Arquidiócesis de Hermosillo</p>
-      <h1>Arquidiócesis de Hermosillo</h1>
+      <p className='p-Bienvenidos'>Sitio Oficial de la Arquidiócesis de Hermosillo</p>
+      <hr className='hr-App'/>
+      <h1 className='h1-Arquidiócesis'>Arquidiócesis de Hermosillo</h1>
+    
       <Navbar />
 
  
