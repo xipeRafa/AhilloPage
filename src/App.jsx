@@ -23,6 +23,7 @@ import VisitaPastoral from './pages/VisitaPastoral';
 //import UserPage from './pages/UserPage';
 
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Parroquias from './pages/directorio/Parroquias';
 //import Search from './components/Search';
 
@@ -103,6 +104,9 @@ export default function App() {
 
         <Route path="*" element={ <Inicio />} />
       </Routes>
+
+      <Footer/>
+
     </div>
   );
 }
