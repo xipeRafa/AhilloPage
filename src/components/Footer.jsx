@@ -13,7 +13,7 @@ export default function Footer() {
                     <p>TRIBUNAL ECLESIÁSTICO </p>
 
                     <p>Tel: 662 212 54 05</p>
-                    <a href="">
+                    <a href="" className="email">
                         tribunaleclesiastico@arquidiocesisdehermosillo.org
                     </a>
                 </div>
@@ -32,16 +32,6 @@ export default function Footer() {
                         <div class="logo">
                             <img src="https://www.arquidiocesisdehermosillo.org/images/chayo/AH-08.png" alt="fff" />
                         </div>
-                        {/* <div class="terms">
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Voluptas impedit cum cumque
-                                velit libero officiis quam doloremque
-                                reprehenderit quae corporis! Delectus architecto
-                                officia praesentium atque laudantium, nam
-                                deleniti sapiente deserunt.
-                            </p>
-                        </div> */}
                     </div>
                     <div class="box__footer tar">
 

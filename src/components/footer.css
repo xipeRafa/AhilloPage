@@ -16,9 +16,14 @@
     text-align: center;
     margin: 50px 0;
 }
+
+
 @media (max-width: 1000px) {
     .footerContainer .row {
         flex-direction: column;
+    }
+    .email{
+        font-size: 10px;
     }
 }
 
@@ -54,6 +59,16 @@
 	border: 0;
 	color: #666;
 	background-color: rgba(128, 128, 128, 0.844);
+}
+.email{
+    font-size: 13px!important;
+}
+
+@media (max-width: 1000px) {
+   
+    .email{
+        font-size: 12px!important;
+    }
 }
 
 
@@ -139,7 +154,7 @@
 }
 
 .box__footer a .fab{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .box__copyright{
