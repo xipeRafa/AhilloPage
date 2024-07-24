@@ -27,6 +27,69 @@ export default function Footer() {
             <hr className="hr-Footer" />
 
             <footer>
+
+
+
+            <div class="container__footer">
+                <div class="box__footer tar">
+
+<a href="https://www.google.com">Desarrollo</a>
+<a href="#">Marketing</a>
+<a href="#">Desarrollo</a>
+<a href="#"> Desarrollo</a>
+</div>
+                   
+                    <div class="box__footer tar">
+
+                        <a href="https://www.google.com">Desarrollo</a>
+                        <a href="#">Marketing</a>
+                        <a href="#">Desarrollo</a>
+                        <a href="#"> Desarrollo</a>
+                    </div>
+
+                    <div class="box__footer tac">
+
+                        <a href="#">Acerca de</a>
+                        <a href="#">Trabajos</a>
+                        <a href="#">Procesos</a>
+                        <a href="#">Servicios</a>
+                    </div>
+
+                    <div class="box__footer">
+
+                        <a href="#">
+                            {" "}
+                            <i class="fab fa-facebook-square"></i> Facebook
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter-square"></i> Twitter
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-youtube"></i> Youtube
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram-square"></i> Instagram
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
                 <div class="container__footer">
                     <div class="box__footer">
                         <div class="logo">
@@ -66,6 +129,17 @@ export default function Footer() {
                         </a>
                     </div>
                 </div>
+
+
+
+
+
+
+
+
+
+
+
 
                 <div class="box__copyright">
                     <p>
