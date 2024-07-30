@@ -23,7 +23,7 @@ export default function Navbar() {
                     <div className="dos" />
                     <div className="tres" />
                 </div>
-                <p>{isActive ? "MENU" : "✘"}</p>
+                <p className='menuX'>{isActive ? "MENU" : "✘"}</p>
             </div>
 
             <div className={isActive ? "menu " : "menu display"} onClick={InWidth}>
