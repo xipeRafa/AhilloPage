@@ -9,7 +9,7 @@ import {
 
 //import DashboardPage from './pages/DashboardPage';
 import NotFoundPage from './pages/NotFoundPage';
-import Inicio from './pages/Inicio';
+import Inicio from './pages/inicio/Inicio';
 import InformacionPage from './pages/InformacionPage';
 import Gobierno from './pages/Gobierno'
 import Directorio from './pages/directorio/Directorio'
@@ -47,7 +47,7 @@ export default function App() {
 
   return (
     <div className='containerApp'>
-      <p className='p-Bienvenidos'>Sitio Oficial de la Arquidiócesis de Hermosillo</p>
+      <p className='p-Bienvenidos'>Directorio de la Arquidiócesis de Hermosillo</p>
       <hr className='hr-App'/>
       <h1 className='h1-Arquidiócesis'>Arquidiócesis de Hermosillo</h1>
     
