@@ -33,36 +33,37 @@ export default function Footer() {
             <div class="container__footer">
                 <div class="box__footer tar">
 
-<a href="https://www.google.com">Desarrollo</a>
-<a href="#">Marketing</a>
-<a href="#">Desarrollo</a>
-<a href="#"> Desarrollo</a>
+<a href="https://www.google.com">Historia</a>
+<a href="#">Territorio</a>
+<a href="#">Arzobispo</a>
+<a href="#"> Gobierno</a>
 </div>
                    
                     <div class="box__footer tar">
 
-                        <a href="https://www.google.com">Desarrollo</a>
-                        <a href="#">Marketing</a>
-                        <a href="#">Desarrollo</a>
-                        <a href="#"> Desarrollo</a>
+                        <a href="https://www.google.com">Contacto</a>
+                        <a href="#">Aviso de Privacidad</a>
+                       
+                        <a href="#">La Santa Sede</a>
+                        <a href="#">CELAM</a>
                     </div>
 
                     <div class="box__footer tac">
-
-                        <a href="#">Acerca de</a>
-                        <a href="#">Trabajos</a>
-                        <a href="#">Procesos</a>
-                        <a href="#">Servicios</a>
+                         <a href="#">Curia Administrativa</a>
+                        <a href="#"> Curia de Justicia</a>
+                        <a href="#">Curia Consultiva</a>
+                        <a href="#">Curia Pastoral</a>
+                        
                     </div>
 
                     <div class="box__footer">
 
                         <a href="#">
                             {" "}
-                            <i class="fab fa-facebook-square"></i> Facebook
+                            <i class="fab fa-facebook-square"></i> Facebook <span className='redSocial'> (Arquidiócesis)</span>
                         </a>
                         <a href="#">
-                            <i class="fab fa-twitter-square"></i> Twitter
+                            <i class="fab fa-twitter-square"></i> Twitter <span className='redSocial'>(Arquidiócesis)</span>  
                         </a>
                         <a href="#">
                             <i class="fab fa-youtube"></i> Youtube
@@ -98,31 +99,32 @@ export default function Footer() {
                     </div>
                     <div class="box__footer tar">
 
-                        <a href="https://www.google.com">Desarrollo</a>
-                        <a href="#">Marketing</a>
-                        <a href="#">Desarrollo</a>
-                        <a href="#"> Desarrollo</a>
+                        <a href="#">Episcopado Mexicano</a>
+                        <a href="#">Vatican News Español</a>
+                        <a href="#">En Marcha</a>
+                        <a href="#"> Seminario Mayor</a>
                     </div>
 
                     <div class="box__footer tac">
 
-                        <a href="#">Acerca de</a>
-                        <a href="#">Trabajos</a>
-                        <a href="#">Procesos</a>
-                        <a href="#">Servicios</a>
+                        <a href="#">Vicaría de Pastoral </a>
+                        <a href="#">Inicio</a>
+                        <a href="#">----</a>
+                        <a href="#">----</a>
                     </div>
 
                     <div class="box__footer">
 
+                        
                         <a href="#">
-                            {" "}
-                            <i class="fab fa-facebook-square"></i> Facebook
+                            <i class="fab fa-facebook-square"></i> Facebook <span className='redSocial'>(Arzobispo)</span>
+                        </a>
+                        
+                        <a href="#">
+                            <i class="fab fa-twitter-square"></i> Twitter <span className='redSocial'>(Arzobispo)</span>
                         </a>
                         <a href="#">
-                            <i class="fab fa-twitter-square"></i> Twitter
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-youtube"></i> Youtube
+                            <i class="fab fa-youtube"></i> Youtube 
                         </a>
                         <a href="#">
                             <i class="fab fa-instagram-square"></i> Instagram
