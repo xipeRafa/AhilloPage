@@ -12,7 +12,7 @@ import NotFoundPage from './pages/NotFoundPage';
 import Inicio from './pages/inicio/Inicio';
 import InformacionPage from './pages/informacion/InformacionPage';
 
-import Gobierno from './pages/Gobierno'
+import Gobierno from './pages/gobierno/Gobierno'
 import Directorio from './pages/directorio/Directorio'
 import Documentos from './pages/Documentos'
 
