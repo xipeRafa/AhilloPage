@@ -14,6 +14,8 @@ export default function Parroquias() {
 
   const [selectState, setSelectState] = useState('clasificacion');
 
+  const [finderState, setFinderState]=useState('')
+
 
 
   const captureSelect = (e) => {
@@ -21,6 +23,17 @@ export default function Parroquias() {
       setParroquiaState(e.target.value);   
   }
 
+  const handleFinder = (e) =>{
+
+      setFinderState(e.target.value)
+
+      if(finderState.length > 3){
+          setSelectState('nombre')
+          let a = arrPadres.filter((el) => el.nombre.indexOf(e.target.value.replace(/\b\w/g, l => l.toUpperCase())) > -1)
+          setParroquiaState(a[0].nombre)
+      }
+      
+  }
 
 
  
@@ -63,13 +76,13 @@ export default function Parroquias() {
                 <option value="Santa María Magdalena">Santa María Magdalena</option>
             </select>
 
-            <input type='search' placeholder=' buscar' />
+            <input type='search' placeholder=' buscar' onChange={(e)=>handleFinder(e)}/>
         </div>
 
 
 <hr />
 
-      {arrPadres.filter(el => el[selectState] === parroquiaState).map((item, i) => (
+      {arrPadres.filter(el => el[selectState] == parroquiaState).map((item, i) => (
 
         <div key={i}>
 
