@@ -32,7 +32,7 @@ export default function Parroquias() {
           let a = arrPadres.filter((el) => el.nombre.indexOf(e.target.value.replace(/\b\w/g, l => l.toUpperCase())) > -1)
           setParroquiaState(a[0].nombre)
       }
-      
+
   }
 
 
@@ -76,7 +76,7 @@ export default function Parroquias() {
                 <option value="Santa María Magdalena">Santa María Magdalena</option>
             </select>
 
-            <input type='search' placeholder=' buscar' onChange={(e)=>handleFinder(e)}/>
+            <input type='search' placeholder=' Buscar por Nombre' onChange={(e)=>handleFinder(e)}/>
         </div>
 
 
