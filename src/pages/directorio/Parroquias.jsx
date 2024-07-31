@@ -5,7 +5,10 @@ import { useState, useEffect } from "react";
 import "./parroquias.css";
 
 export default function Parroquias() {
-  const [arrPadres, setArrPadres] = useState([]);
+  const [arrPadres, setArrPadres] = useState([])
+
+  const [parroquiaState, setParroquiaState] = useState('parroquia');
+
 
   console.log(arrPadres);
 
@@ -24,18 +27,19 @@ export default function Parroquias() {
 
 
         <div className='parroquiasButtons'>
-            <button>Parroquias</button>
-            <button>Causiparroquias</button>
-            <button>Santuarios</button>
-            <button>Rectorias</button>
+            <button onClick={()=>setParroquiaState('parroquia')}>Parroquias</button>
+            <button onClick={()=>setParroquiaState('cuasiparroquia')}>Causiparroquias</button>
+            <button onClick={()=>setParroquiaState('santuario')}>Santuarios</button>
+            <button onClick={()=>setParroquiaState('rectoria')}>Rectorias</button>
+
             <button>Decanatos</button>
-            <input type='search' placeholder=' burcar' />
+            <input type='search' placeholder=' buscar' />
         </div>
 
 
 <hr />
 
-      {arrPadres.map((item, i) => (
+      {arrPadres.filter(el => el.clasificacion === parroquiaState).map((item, i) => (
 
         <div key={i}>
 
