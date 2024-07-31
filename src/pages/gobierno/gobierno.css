@@ -1,12 +1,12 @@
 
-.informacionContainer{
+.gobiernoContainer{
 	width: 80%;
 	margin-left: 10%;
 	margin-top: 50px;
 }
 
 @media (max-width: 1320px) {
-	.informacionContainer{
+	.gobiernoContainer{
 		width: 100%;
 		margin-left: 0;
 		margin-top: 10px;
@@ -14,7 +14,7 @@
 }
 
 
-.informacionContainer div{
+.gobiernoContainer div{
 	width: 100%;
 	margin-bottom: 50px;
 	display: flex;
@@ -22,12 +22,12 @@
 
 
 
-.informacionContainer div img{
+.gobiernoContainer div img{
 	width: 44%;
 }
 
 
-.informacionContainer div div{
+.gobiernoContainer div div{
 		width: 44%;
 		display: flex;
 		flex-direction: column;
@@ -37,31 +37,31 @@
 
 
 
-.informacionContainer div div h3{
+.gobiernoContainer div div h3{
 	color: var(--bs-gray-800);
 	font-weight: 400;
 
 }
 
 
-.informacionContainer div div p{
+.gobiernoContainer div div p{
 		color: var(--bs-gray-700);
 }
 
 @media (max-width: 1100px) {
-	.informacionContainer div{
+	.gobiernoContainer div{
 		flex-direction: column;
 	}
 
-.informacionContainer div div{
+.gobiernoContainer div div{
 		width: 90%;
 		margin-left: 2%;
 	}
-	.informacionContainer div img{
+	.gobiernoContainer div img{
 		width: 80%;
 		margin-left: 10%;
 	}
-	.informacionContainer div div p{
+	.gobiernoContainer div div p{
 			width: 80%;
 	}
 
@@ -69,16 +69,18 @@
 }
 
 @media (max-width: 600px) {
-	.informacionContainer div{
+
+	.gobiernoContainer div{
 		flex-direction: column;
 	}
 
-.informacionContainer div div{
+	.gobiernoContainer div div{
 		width: 100%;
 		margin-left: 0;
 		padding-left: 0;
 	}
-	.informacionContainer div img{
+
+	.gobiernoContainer div img{
 		width: 100%;
 		margin-left: 0;
 	}
@@ -86,13 +88,13 @@
 }
 
 
-.informacionContainer div div button{
-			width: 140px;
-			padding: 10px;
-			background-color: navy;
-			color: white;
-			border: none;
-			border-radius: 4px;
+.gobiernoContainer div div button{
+		width: 140px;
+		padding: 10px;
+		background-color: navy;
+		color: white;
+		border: none;
+		border-radius: 4px;
 }
 
 

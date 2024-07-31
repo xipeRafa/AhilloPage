@@ -3,7 +3,7 @@ import './gobierno.css'
 
 export default function Gobierno() {
   return (
-    <div className='informacionContainer'>
+    <div className='gobiernoContainer'>
         <div>
           <img src='https://www.arquidiocesisdehermosillo.org/images/AH-02.png' />
           <div>

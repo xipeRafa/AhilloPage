@@ -21,6 +21,20 @@ export default function Parroquias() {
   return (
     <div className="parroquias">
 
+
+
+        <div className='parroquiasButtons'>
+            <button>Parroquias</button>
+            <button>Causiparroquias</button>
+            <button>Santuarios</button>
+            <button>Rectorias</button>
+            <button>Decanatos</button>
+            <input type='search' placeholder=' burcar' />
+        </div>
+
+
+<hr />
+
       {arrPadres.map((item, i) => (
 
         <div key={i}>
@@ -28,9 +42,9 @@ export default function Parroquias() {
           <div style={{ backgroundImage: `url(${item.imgUrl})`}} className="imgParroquias" />
 
           <div className="listParroquias">
-            {/* <h5>Creado: {  new Date(item.duration).toLocaleDateString("es-ES", {year: 'numeric', month: 'long', day: 'numeric'})}</h5> */}
+             <h5>Ultima Actualización: {  new Date(item.duration).toLocaleDateString("es-ES", {year: 'numeric', month: 'long', day: 'numeric'})}</h5> 
             <h5>{/* {milisegundosComoFecha(item.duration)} */} </h5>
-            <h5>{item.email}</h5>
+            <p>{item.email}</p>
             <hr />
 
             <p>

@@ -26,3 +26,29 @@
 .listParroquias {
 	padding: 10px;
 }
+
+
+
+
+.parroquiasButtons{
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 20px;
+}
+
+.parroquiasButtons button, [type="search"] {
+	width: 200px;
+	margin-bottom: 20px;
+	padding: 4px 0;
+	color: gray;
+}
+
+
+@media (max-width: 1000px) {
+	.parroquiasButtons{
+		flex-direction: column;
+	}
+	.parroquiasButtons button, [type="search"] {
+		width: 100%;
+	}
+}
