@@ -5,12 +5,25 @@ import { useState, useEffect } from "react";
 import "./parroquias.css";
 
 export default function Parroquias() {
+
   const [arrPadres, setArrPadres] = useState([])
+
 
   const [parroquiaState, setParroquiaState] = useState('parroquia');
 
 
-  console.log(arrPadres);
+  const [selectState, setSelectState] = useState('clasificacion');
+
+
+
+  const captureSelect = (e) => {
+      setSelectState('decanato')
+      setParroquiaState(e.target.value);   
+  }
+
+
+
+ 
 
   useEffect(() => {
     const data = collection(db, "auctions");
@@ -21,25 +34,42 @@ export default function Parroquias() {
     });
   }, []);
 
+
+
   return (
     <div className="parroquias">
 
 
 
         <div className='parroquiasButtons'>
-            <button onClick={()=>setParroquiaState('parroquia')}>Parroquias</button>
-            <button onClick={()=>setParroquiaState('cuasiparroquia')}>Causiparroquias</button>
-            <button onClick={()=>setParroquiaState('santuario')}>Santuarios</button>
-            <button onClick={()=>setParroquiaState('rectoria')}>Rectorias</button>
+            <button onClick={()=>{setSelectState('clasificacion'), setParroquiaState('parroquia')}}>Parroquias</button>
+            <button onClick={()=>{setSelectState('clasificacion'), setParroquiaState('cuasiparroquia')}}>Causiparroquias</button>
+            <button onClick={()=>{setSelectState('clasificacion'), setParroquiaState('santuario')}}>Santuarios</button>
+            <button onClick={()=>{setSelectState('clasificacion'), setParroquiaState('rectoria')}}>Rectorias</button>
 
-            <button>Decanatos</button>
+            <select name="select" onChange={captureSelect}>
+                <option selected disabled>Buscar por Decanato</option>
+
+                <option value="Nuestra Señora de la Asunción">Nuestra Señora de la Asunción</option>
+                <option value="Sagrado Corazón de Jesús">Sagrado Corazón de Jesús</option>
+                <option value="Nuestra Señora de Fátima">Nuestra Señora de Fátima</option>
+
+                <option value="Inmaculada Concepción de María">Inmaculada Concepción de María</option>
+                <option value="San Isidro Labrador">San Isidro Labrador</option>
+                <option value="Nuestra Señora de la Candelaria">Nuestra Señora de la Candelaria</option>
+
+                <option value="Santo Niño de Atocha">Santo Niño de Atocha</option>
+                <option value="La Asunción, Pueblos del Río">La Asunción, Pueblos del Río</option>
+                <option value="Santa María Magdalena">Santa María Magdalena</option>
+            </select>
+
             <input type='search' placeholder=' buscar' />
         </div>
 
 
 <hr />
 
-      {arrPadres.filter(el => el.clasificacion === parroquiaState).map((item, i) => (
+      {arrPadres.filter(el => el[selectState] === parroquiaState).map((item, i) => (
 
         <div key={i}>
 
