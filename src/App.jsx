@@ -10,13 +10,16 @@ import {
 //import DashboardPage from './pages/DashboardPage';
 import NotFoundPage from './pages/NotFoundPage';
 import Inicio from './pages/inicio/Inicio';
-import InformacionPage from './pages/InformacionPage';
+import InformacionPage from './pages/informacion/InformacionPage';
+
 import Gobierno from './pages/Gobierno'
 import Directorio from './pages/directorio/Directorio'
 import Documentos from './pages/Documentos'
+
 import Blog from './pages/Blog'
 import Galeria from './pages/Galeria'
 import Diezmo from './pages/Diezmo'
+
 import Contacto from './pages/Contacto'
 import VisitaPastoral from './pages/VisitaPastoral';
 //import UsersPage from './pages/UsersPage';

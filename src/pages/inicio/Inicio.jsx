@@ -1,6 +1,6 @@
 import './inicio.css'
 import { useState } from "react";
-
+import imgX from './2.png'
 
 
 
@@ -12,6 +12,8 @@ export default function Inicio() {
 
   return (
     <div className='inicioContainer'>
+
+        <img className='imgX' src={imgX}/>
 
         <div className='buttonsContainer'>
             <button className={displayState === '1' ? 'bg-dark' : 'bg-ligth'} onClick={()=>setDisplayState('1')}>PAPA</button>
