@@ -36,8 +36,9 @@ export default function Navbar() {
                 <NavLink to="/AhilloPage/documentos"> Documentos </NavLink>
                 <NavLink to="/AhilloPage/blog">       Blog </NavLink>
 
-                <NavLink to="/AhilloPage/galeria">  Galeria </NavLink>
-                <NavLink to="/AhilloPage/diezmo">   Diezmo </NavLink>
+                <a href='https://www.flickr.com/photos/193091184@N03/albums' target='_blanck'>Galeria</a>
+                <a href='https://www.diezmohmo.com' target='_blanck'>Diezmo</a>
+
                 <NavLink to="/AhilloPage/contacto"> Contacto </NavLink>
 
                 <NavLink to="/AhilloPage/visitaPastoral"> Visita pastoral </NavLink>

@@ -17,10 +17,8 @@ import Directorio from './pages/directorio/Directorio'
 import Documentos from './pages/Documentos'
 
 import Blog from './pages/Blog'
-import Galeria from './pages/Galeria'
-import Diezmo from './pages/Diezmo'
 
-import Contacto from './pages/Contacto'
+import Contacto from './pages/contacto/Contacto'
 import VisitaPastoral from './pages/VisitaPastoral';
 //import UsersPage from './pages/UsersPage';
 //import UserPage from './pages/UserPage';
@@ -95,8 +93,7 @@ export default function App() {
         <Route path="/AhilloPage/documentos" element={<Documentos />} />
 
         <Route path="/AhilloPage/blog" element={<Blog />} />
-        <Route path="/AhilloPage/galeria" element={<Galeria />} />
-        <Route path="/AhilloPage/diezmo" element={<Diezmo />} />
+
 
         <Route path="/AhilloPage/contacto" element={<Contacto />} />
         <Route path="/AhilloPage/VisitaPastoral" element={<VisitaPastoral />} />
