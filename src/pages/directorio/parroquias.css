@@ -3,7 +3,7 @@
 	padding: 4px;
 }
 
-.parroquias h5 {
+.parroquias> h5 {
 	font-weight: bolder;
 }
 
@@ -36,7 +36,7 @@
 	margin-bottom: 20px;
 }
 
-.parroquiasButtons button, [type="search"], select {
+.parroquiasButtons> button, [type="search"], select {
 	width: 200px;
 	margin-bottom: 20px;
 	padding: 4px 0;
@@ -48,7 +48,7 @@
 	.parroquiasButtons{
 		flex-direction: column;
 	}
-	.parroquiasButtons button, [type="search"], select {
+	.parroquiasButtons> button, [type="search"], select {
 		width: 100%;
 	}
 }

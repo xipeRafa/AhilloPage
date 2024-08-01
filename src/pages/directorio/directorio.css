@@ -5,7 +5,6 @@
 }
 
 .itemDirectorio {
-    text-align: 'center';
     width: 340px;
     height: 190px;
     padding-top: 10px;
@@ -15,7 +14,7 @@
     background-size: contain;
 }
 
-.itemDirectorio a{
+.itemDirectorio> a{
     text-decoration: none;
 }
 

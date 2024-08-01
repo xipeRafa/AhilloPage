@@ -1,102 +1,96 @@
-
-.gobiernoContainer{
-	width: 80%;
-	margin-left: 10%;
-	margin-top: 50px;
+.gobiernoContainer {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
 }
 
 @media (max-width: 1320px) {
-	.gobiernoContainer{
-		width: 100%;
-		margin-left: 0;
-		margin-top: 10px;
-	}
+    .gobiernoContainer {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
 }
 
 
-.gobiernoContainer div{
-	width: 100%;
-	margin-bottom: 50px;
-	display: flex;
+.gobiernoContainer>div {
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
 }
 
 
-
-.gobiernoContainer div img{
-	width: 44%;
+.gobiernoContainer>div>img {
+    width: 44%;
 }
 
 
-.gobiernoContainer div div{
-		width: 44%;
-		display: flex;
-		flex-direction: column;
-		padding-left: 60px;
+.gobiernoContainer>div>div {
+    width: 44%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
 }
 
 
-
-
-.gobiernoContainer div div h3{
-	color: var(--bs-gray-800);
-	font-weight: 400;
+.gobiernoContainer>div>div>h3 {
+    color: var(--bs-gray-800);
+    font-weight: 400;
 
 }
 
 
-.gobiernoContainer div div p{
-		color: var(--bs-gray-700);
+.gobiernoContainer>div>div>p {
+    color: var(--bs-gray-700);
 }
 
 @media (max-width: 1100px) {
-	.gobiernoContainer div{
-		flex-direction: column;
-	}
+    .gobiernoContainer>div {
+        flex-direction: column;
+    }
 
-.gobiernoContainer div div{
-		width: 90%;
-		margin-left: 2%;
-	}
-	.gobiernoContainer div img{
-		width: 80%;
-		margin-left: 10%;
-	}
-	.gobiernoContainer div div p{
-			width: 80%;
-	}
+    .gobiernoContainer>div>div {
+        width: 90%;
+        margin-left: 2%;
+    }
+
+    .gobiernoContainer div>img {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .gobiernoContainer div>div>p {
+        width: 80%;
+    }
 
 
 }
 
 @media (max-width: 600px) {
 
-	.gobiernoContainer div{
-		flex-direction: column;
-	}
+    .gobiernoContainer>div {
+        flex-direction: column;
+    }
 
-	.gobiernoContainer div div{
-		width: 100%;
-		margin-left: 0;
-		padding-left: 0;
-	}
+    .gobiernoContainer>div>div {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+    }
 
-	.gobiernoContainer div img{
-		width: 100%;
-		margin-left: 0;
-	}
+    .gobiernoContainer>div>img {
+        width: 100%;
+        margin-left: 0;
+    }
 
 }
 
 
-.gobiernoContainer div div button{
-		width: 140px;
-		padding: 10px;
-		background-color: navy;
-		color: white;
-		border: none;
-		border-radius: 4px;
+.gobiernoContainer>div>div>button {
+    width: 140px;
+    padding: 10px;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 4px;
 }
-
-
-
-

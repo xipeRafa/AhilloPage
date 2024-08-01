@@ -1,4 +1,5 @@
 import './contacto.css'
+import ImgContacto from './contacto-min.png'
 
 export default function Contacto() {
     return (<>
@@ -11,8 +12,12 @@ export default function Contacto() {
         <img src='https://www.arquidiocesisdehermosillo.org/images/arquidiocesis/Felipe_Pozos.jpg' />
         <img src='https://www.arquidiocesisdehermosillo.org/images/jesus%20jose.png#joomlaImage://local-images/jesus%20jose.png?width=6245&height=8591' />
         <img src='https://www.arquidiocesisdehermosillo.org/images/arquidiocesis/Nogales.jpg' />
+        
       </div>
+      <div className='contacto'>
 
+ <img  src={ImgContacto} />
+</div>
 {/*
       <div className='infoContainer'>
           <div>
