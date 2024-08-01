@@ -1,7 +1,7 @@
 
-.contactoContainer h4{
+.contactoContainer h4, p, h3, h3, h5{
 	text-align: center;
-	color:#ad8a1f;
+	color: var(--bs-gray-700);
 	font-weight: 500;
 }
 
@@ -15,7 +15,13 @@
 
 .contactoContainer img{
 	width: 25%;
+}
 
+
+
+.contactoContainer div{
+	width: 25%;
+	border: 1px solid red;
 }
 
 @media (max-width: 1000px) {
@@ -26,10 +32,12 @@
 }
 
 
-
 @media (max-width: 600px) {
 	.contactoContainer img{
 		width: 100%;
 
 	}
 }
+
+
+
