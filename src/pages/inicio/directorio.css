@@ -1,0 +1,54 @@
+parroquias {
+	font-family: sans-serif;
+	padding: 4px;
+}
+
+.parroquias> h5 {
+	font-weight: bolder;
+}
+
+.parroquias p {
+	font-weight: lighter;
+	color: Black;
+}
+
+.parroquias p span {
+	font-weight: bold;
+	color: rgb(80, 80, 80);
+}
+
+.imgParroquias {
+	height: 380px;
+	background: no-repeat center;
+	background-size: contain;
+}
+
+.listParroquias {
+	padding: 10px;
+}
+
+
+
+
+.parroquiasButtons{
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 20px;
+}
+
+.parroquiasButtons> button, [type="search"], select {
+	width: 200px;
+	margin-bottom: 20px;
+	padding: 4px 0;
+	color: gray;
+}
+
+
+@media (max-width: 1000px) {
+	.parroquiasButtons{
+		flex-direction: column;
+	}
+	.parroquiasButtons> button, [type="search"], select {
+		width: 100%;
+	}
+}

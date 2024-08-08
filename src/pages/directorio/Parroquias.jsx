@@ -1,214 +1,88 @@
-import { getDocs, collection } from "firebase/firestore";
-import db from "../../firebase/firebaseConfig";
-import { useState, useEffect } from "react";
+
 
 import "./parroquias.css";
 
-export default function Parroquias() {
-
-  const [arrPadres, setArrPadres] = useState([])
-
-
-  const [parroquiaState, setParroquiaState] = useState('parroquia');
-
-
-  const [selectState, setSelectState] = useState('clasificacion');
-
-  const [finderState, setFinderState]=useState('')
+import { useState } from "react";
+import imgX from './2.png'
 
 
 
-  const captureSelect = (e) => {
-      setSelectState('decanato')
-      setParroquiaState(e.target.value);   
-  }
 
-  const handleFinder = (e) =>{
-
-      setFinderState(e.target.value)
-
-      if(finderState.length > 3){
-          setSelectState('nombre')
-          let a = arrPadres.filter((el) => el.nombre.indexOf(e.target.value.replace(/\b\w/g, l => l.toUpperCase())) > -1)
-          setParroquiaState(a[0].nombre)
-      }
-
-  }
+export default function Inicio() {
 
 
- 
-
-  useEffect(() => {
-    const data = collection(db, "auctions");
-    getDocs(data).then((resp) => {
-      //console.log(resp.docs[0].id)
-      //console.log(resp.docs[0].data())
-      setArrPadres(resp.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-    });
-  }, []);
-
-
+  const[displayState, setDisplayState]=useState('1')
 
   return (
-    <div className="parroquias">
+    <div className='inicioContainer'>
 
+        <img className='imgX' src={imgX}/>
 
-
-        <div className='parroquiasButtons'>
-            <button onClick={()=>{setSelectState('clasificacion'), setParroquiaState('parroquia')}}>Parroquias</button>
-            <button onClick={()=>{setSelectState('clasificacion'), setParroquiaState('cuasiparroquia')}}>Causiparroquias</button>
-            <button onClick={()=>{setSelectState('clasificacion'), setParroquiaState('santuario')}}>Santuarios</button>
-            <button onClick={()=>{setSelectState('clasificacion'), setParroquiaState('rectoria')}}>Rectorias</button>
-
-            <select name="select" onChange={captureSelect}>
-                <option selected disabled>Buscar por Decanato</option>
-
-                <option value="Nuestra Señora de la Asunción">Nuestra Señora de la Asunción</option>
-                <option value="Sagrado Corazón de Jesús">Sagrado Corazón de Jesús</option>
-                <option value="Nuestra Señora de Fátima">Nuestra Señora de Fátima</option>
-
-                <option value="Inmaculada Concepción de María">Inmaculada Concepción de María</option>
-                <option value="San Isidro Labrador">San Isidro Labrador</option>
-                <option value="Nuestra Señora de la Candelaria">Nuestra Señora de la Candelaria</option>
-
-                <option value="Santo Niño de Atocha">Santo Niño de Atocha</option>
-                <option value="La Asunción, Pueblos del Río">La Asunción, Pueblos del Río</option>
-                <option value="Santa María Magdalena">Santa María Magdalena</option>
-            </select>
-
-            <input type='search' placeholder=' Buscar por Nombre' onChange={(e)=>handleFinder(e)}/>
+        <div className='buttonsContainer'>
+            <button className={displayState === '1' ? 'bg-dark' : 'bg-ligth'} onClick={()=>setDisplayState('1')}>PAPA</button>
+            <button className={displayState === '2' ? 'bg-dark' : 'bg-ligth'} onClick={()=>setDisplayState('2')}>ARZOBISPO</button>
+            <button className={displayState === '3' ? 'bg-dark' : 'bg-ligth'} onClick={()=>setDisplayState('3')}>ARZOBISPO EMÉRITO</button>
         </div>
 
 
-<hr />
-
-      {arrPadres.filter(el => el[selectState] == parroquiaState).map((item, i) => (
-
-        <div key={i}>
-
-          <div style={{ backgroundImage: `url(${item.imgUrl})`}} className="imgParroquias" />
-
-          <div className="listParroquias">
-             <h5>Ultima Actualización: {  new Date(item.duration).toLocaleDateString("es-ES", {year: 'numeric', month: 'long', day: 'numeric'})}</h5> 
-            <h5>{/* {milisegundosComoFecha(item.duration)} */} </h5>
-            <p>{item.email}</p>
-            <hr />
-
-            <p>
-              Nombre:<span> {item.nombre}</span>
-            </p>
-            <p>
-              Parroco:<span> {item.parroco}</span>
-            </p>
-            <p>
-              Vicario:<span> {item.vicario}</span>
-            </p>
-
-            <p>
-              Clasificacion:<span> {item.clasificacion}</span>
-            </p>
-            <p>
-              Decanato:<span> {item.decanato}</span>
-            </p>
-
-            <hr />
-
-            <p>
-              Confesiones:<span> {item.confesiones}</span>
-            </p>
-            <p>
-              Direccion:<span> {item.direccion}</span>
-            </p>
-            <p>
-              Horario de Oficina:<span> {item.oficina}</span>
-            </p>
-            <p>
-              Telefono:<span> {item.telefono}</span>
-            </p>
-
-            <p>
-              Sitio Web:<span> {item.sitioWeb}</span>
-            </p>
-
-            <hr />
-
-            <p>
-              Horario de Misas Lunes: <span> {item.horarioDeMisasLunes}</span>
-            </p>
-            <p>
-              Horario de Misas Martes: <span> {item.horarioDeMisasMartes}</span>
-            </p>
-            <p>
-              Horario de Misas Miercoles: <span> {item.horarioDeMisasMiercoles}</span>
-            </p>
-
-            <p>
-              Horario de Misas Jueves:<span> {item.horarioDeMisasJueves}</span>
-            </p>
-            <p>
-              Horario de Misas Viernes: <span> {item.horarioDeMisasViernes}</span>
-            </p>
-            <p>
-              {" "}
-              Horario de Misas Sabado: <span> {item.horarioDeMisasSabado}</span>
-            </p>
-
-            <p>
-              Horario de Misas Domingo: <span> {item.horarioDeMisasDomingo}</span>
-            </p>
-
-            <hr />
-
-            <p>
-              Catesismo Adultos: <span> {item.catesismoAdultos}</span>
-            </p>
-            <p>
-              Catesismo Niños: <span> {item.catesismoNinos}</span>
-            </p>
-
-            <hr />
-
-            <p>
-              Platicas Prematrimoniales:<span> {item.preMatrimoniales}</span>
-            </p>
-            <p>
-              Platicas Prebautismales:<span> {item.preBautismales}</span>
-            </p>
-            <p>
-              Eventos: <span> {item.eventos}</span>
-            </p>
-
-            <p>
-              Fiesta Patronal: <span>{item.fiestaPatronal}</span>
-            </p>
-
-            <hr />
-
-            {Object.keys(item.centros).sort().map((el, i) => (
-                <div key={i + "koko"} className='borderX'>
-                  <p>{el.slice(2).replace("_", " ").replace("_", " ").replace("_", " ")}:<span> {item.centros[el]}</span></p>
-                </div>
-              ))}
-
-
-            {Object.keys(item.grupos).sort().map((el, i) => (
-                <div key={i + "kok"} className='borderX'>
-                  <p>{el.slice(2).replace("_", " ").replace("_", " ").replace("_", " ")}:<span> {item.grupos[el]}</span></p>
-                </div>
-              ))}
-
-
-            <p>
-              Comentarios:<span> {item.comentarios}</span>
-            </p>
-
-            <hr />
-
-          </div>
-
+        <div className={displayState !== '1' ? 'd-none' : 'displayX'}>
+            <div>
+              <img src='https://www.arquidiocesisdehermosillo.org/images/joomlart/feature-intro/PAPA.png' />
+            </div>             
+            <div>
+                   <h2>PAPA FRANCISCO</h2>
+                  <h3>Elección</h3>
+                  <p>
+                            El 13 de marzo de 2013 los millones de cristianos católicos en todo el mundo recibían con 
+                            júbilo la noticia de la elección de su nuevo pontífice, 
+                            el cardenal Jorge Mario Bergoglio quien eligió como nombre: Francisco
+                  </p>
+                   <button>
+                     BIOGRAFÍA
+                   </button>
+            </div>                    
         </div>
 
-      ))}
+        <div className={displayState !== '2' ? 'd-none' : 'displayX'}>
+        <div>
+              <img src='https://www.arquidiocesisdehermosillo.org/images/joomlart/feature-intro/ARZOBISPO.png '/>
+            </div>  
+            
+            <div>
+                   <h2>MONS. RUY RENDÓN LEAL</h2>
+                  <h3>Arzobispo de Hermosillo</h3>
+                  <p>
+                           El 26 de abril de 2016 es nombrado por el PAPA Francisco como cuarto arzobispo
+                            de Hermosillo. Y tomó posesión de la arquidiócesis el 8 de junio de 2016.
+                  </p>
+                   <button>
+                     ARZOBISPO RUY
+                   </button>
+            </div> 
+        </div>
+
+
+        <div className={displayState !== '3' ? 'd-none' : 'displayX'}>
+
+             <div>
+                <img src='https://www.arquidiocesisdehermosillo.org/images/arquidiocesis/mons_ulises_450_px_copia.jpg'/>
+            </div>             
+            <div>
+                  <h2>MONS. JOSÉ ULISES MACIAS SALCEDO</h2>
+                  <h3>Arzobispo Emérito de Hermosillo</h3>
+                  <p>
+                            Nació en León, Guanajuato, el 29 de octubre de 1940.
+                            Su ordenación sacerdotal fue en León, Guanajuato, el 10 de abril de 1966.
+                            Es nombrado obispo de la Diócesis de Mexicali por el Papa Juan Pablo II.
+                            Es nombrado tercer arzobispo de la Arquidiócesis de Hermosillo el 19 de agosto de 1996, por S.S Juan Pablo II.
+                            Su renuncia es aceptada el 26 de abril de 2016.
+                  </p>
+                   <button>
+                     ARZOBISPO EMÉRITO
+                   </button>
+
+            </div> 
+        </div>
 
     </div>
   )

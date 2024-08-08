@@ -13,7 +13,9 @@ import Inicio from './pages/inicio/Inicio';
 import InformacionPage from './pages/informacion/InformacionPage';
 
 import Gobierno from './pages/gobierno/Gobierno'
-import Directorio from './pages/directorio/Directorio'
+import Directorio2 from './pages/directorio/Directorio2'
+import Directorio from './pages/inicio/Directorio'
+
 import Documentos from './pages/Documentos'
 
 import Blog from './pages/Blog'
@@ -88,7 +90,8 @@ export default function App() {
         </Route> */}
 
         <Route path="/AhilloPage/gobierno" element={<Gobierno />} />
-        <Route path="/AhilloPage/directorio" element={<Directorio />} />
+        <Route path="/AhilloPage/directorio2" element={<Directorio2 />} />
+         <Route path="/AhilloPage/directorio" element={<Directorio />} />
 
         <Route path="/AhilloPage/documentos" element={<Documentos />} />
 
