@@ -1,18 +1,21 @@
 
-import { getDocs, collection } from "firebase/firestore";
-import db from "../../../firebase/firebaseConfig";
+
+
+
 import { useState, useEffect } from "react";
 
 
 import './parroquias.css'
 
-export default function Parroquias() {
 
-  const [arrPadres, setArrPadres] = useState([])
+
+
+
+
+export default function Parroquias({arrPadres}) {
 
 
   const [parroquiaState, setParroquiaState] = useState('parroquia');
-
 
   const [selectState, setSelectState] = useState('clasificacion');
 
@@ -40,14 +43,7 @@ export default function Parroquias() {
 
  
 
-  useEffect(() => {
-    const data = collection(db, "auctions");
-    getDocs(data).then((resp) => {
-      //console.log(resp.docs[0].id)
-      //console.log(resp.docs[0].data())
-      setArrPadres(resp.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-    });
-  }, []);
+ 
 
 
 
@@ -58,7 +54,7 @@ export default function Parroquias() {
 
         <div className='parroquiasButtons'>
             <button onClick={()=>{setSelectState('clasificacion'), setParroquiaState('parroquia')}}>Parroquias</button>
-            <button onClick={()=>{setSelectState('clasificacion'), setParroquiaState('cuasiparroquia')}}>Causiparroquias</button>
+            <button onClick={()=>{setSelectState('clasificacion'), setParroquiaState('cuasiparroquia')}}>Cuasiparroquias</button>
             <button onClick={()=>{setSelectState('clasificacion'), setParroquiaState('santuario')}}>Santuarios</button>
             <button onClick={()=>{setSelectState('clasificacion'), setParroquiaState('rectoria')}}>Rectorias</button>
 

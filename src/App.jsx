@@ -1,3 +1,5 @@
+import { getDocs, collection } from "firebase/firestore";
+import db from "./firebase/firebaseConfig";
 
 import {
   //Link,
@@ -6,6 +8,8 @@ import {
   Route,
   useLocation,
 } from 'react-router-dom';
+
+import { useState, useEffect } from "react";
 
 
 
@@ -43,10 +47,25 @@ import Footer from './components/Footer';
 
 
 
+
+
+
+
 export default function App() {
 
   const location = useLocation();
   console.log(location.pathname);
+
+  const [arrPadres, setArrPadres] = useState([])
+
+   useEffect(() => {
+    const data = collection(db, "auctions");
+    getDocs(data).then((resp) => {
+      //console.log(resp.docs[0].id)
+      //console.log(resp.docs[0].data())
+      setArrPadres(resp.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+    });
+  }, []);
 
 
   return (
@@ -65,7 +84,7 @@ export default function App() {
 
             <Route path="/AhilloPage/vidaConsagrada" element={<VidaConsagrada />} />
             <Route path="/AhilloPage/organismosLaicales" element={<OrganismosLaicales />} />
-            <Route path="/AhilloPage/parroquias" element={<Parroquias />} />
+            <Route path="/AhilloPage/parroquias" element={<Parroquias arrPadres={arrPadres}/>} />
 
             <Route path="/AhilloPage/institucionesEducativas" element={<InstitucionesEducativas />} />
             <Route path="/AhilloPage/obrasSociales" element={<ObrasSociales />} />
