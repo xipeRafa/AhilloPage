@@ -1,50 +1,117 @@
+.
 
-.contactoContainer>h4{
-text-align: center;
-	color: #ad8a1f;
-	font-weight: 500;
+
+
+
+
+
+
+
+
+
+.inicioContainer{
+	margin-top: 0;
+}
+
+.buttonsContainer{
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 20px;
 }
 
 
-.contactoContainer> h2{
-	text-align: center;
-	color: var(--bs-gray-700);
-	font-weight: 300;
+
+.buttonsContainer button{
+	width: 200px;
+	padding: 10px 0;
+	margin-bottom: 10px;
+	font-size: 12px;
+	letter-spacing: .4px;
+}
+
+.d-none{
+	display: none;
+}
+
+.displayX{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
 
-.contactoContainer> img{
-	width: 25%;
+
+
+.displayX div{
+	width: 40%;
 }
 
-
-
-.contactoContainer> div{
-	width: 25%;
-	border: 1px solid red;
+.displayX div img{
+	width: 100%;
 }
 
 @media (max-width: 1000px) {
-	.contactoContainer> img{
-		width: 50%;
-
+	.buttonsContainer{
+		flex-direction: column;
 	}
+    .displayX{
+    	flex-direction: column;
+    }
+    .displayX div{
+    	width: 100%;
+    }
 }
 
 
-@media (max-width: 600px) {
-	.contactoContainer> img{
-		width: 100%;
+.displayX div:nth-child(2) *{
+	margin:40px ;
+}
 
-	}
+.displayX div:nth-child(2) h2{
+	font-size: 12px;
+	color: #ad8a1f;
+	font-weight: 500;
 }
-.contacto{
-	width: 100%;
-	text-align: center;
-	margin-top: 20px;
+.displayX div:nth-child(2) h3{
+	font-size: 18px;
+	font-weight: 500;
+	color: #363231;
 }
-.contacto> img{
-		width: 320px;
+.displayX div:nth-child(2) p{
+	font-size: 14px;
+	color: gray;
+	font-weight: 500;
 }
+
+.displayX div:nth-child(2) button{
+	border: none;
+	padding: 10px 6px;
+	font-size: 14px;
+	background-color: #ad8a1f;
+	font-weight: 500;
+	color: white;
+	border-radius: 4px;
+}
+
+
+.bg-dark{
+	color: navy;
+	font-weight: 600;
+}
+
+
+.bg-ligth{
+	color: gray;
+}
+
+
+
+
+
+
+
+
+
+
 
 
