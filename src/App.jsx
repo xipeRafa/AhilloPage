@@ -15,8 +15,8 @@ import Directorio from './pages/inicio/Directorio'
 import Informacion from './pages/informacion/Informacion';
 import Gobierno from './pages/gobierno/Gobierno'
 
-import PGP from './pages/directorio/PGP';
-import Provincia from './pages/contacto/Provincia'
+import PGP from './pages/pgp/PGP';
+import Provincia from './pages/provincia/Provincia'
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';

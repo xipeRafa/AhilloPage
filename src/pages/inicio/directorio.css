@@ -39,7 +39,7 @@ parroquias {
 
 .parroquiasButtons> button, [type="search"], select {
 	width: 200px;
-	margin-bottom: 20px;
+	margin-bottom: 20px!important;
 	padding: 4px 0;
 	color: gray;
 }
