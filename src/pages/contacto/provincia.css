@@ -46,7 +46,6 @@
 	}
 	.buttonsContainer>button{
 		width: 100%;
-		padding: 100px;
 	}
     .displayX{
     	flex-direction: column;
@@ -101,7 +100,6 @@
 
 .titulo{
 	text-align: center;
-	margin-bottom: 60px;
 }
 
 .titulo h4{
