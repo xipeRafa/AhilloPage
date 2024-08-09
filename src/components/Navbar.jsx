@@ -32,9 +32,9 @@ export default function Navbar() {
                 <NavLink to="/AhilloPage/informacion"> Información </NavLink>
                 <NavLink to="/AhilloPage/gobierno">    Gobierno </NavLink>
 
-                <NavLink to="/AhilloPage/parroquias"> PGP 2031-2033 </NavLink>
+                <NavLink to="/AhilloPage/PGP"> PGP 2031-2033 </NavLink>
 
-                <NavLink to="/AhilloPage/contacto"> Provincia Eclesiástica de Hermosillo </NavLink>
+                <NavLink to="/AhilloPage/provincia"> Provincia Eclesiástica de Hermosillo </NavLink>
 
             </div>
         </div>

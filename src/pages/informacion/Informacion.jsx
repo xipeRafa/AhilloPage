@@ -1,7 +1,7 @@
 
 import './informacion.css'
 
-export default function InformacionPage() {
+export default function Informacion() {
   return (
     <div className='informacionContainer'>
         <div>

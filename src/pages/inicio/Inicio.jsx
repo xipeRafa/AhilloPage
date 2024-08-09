@@ -1,6 +1,6 @@
 
 import { NavLink, useNavigate } from "react-router-dom";
-import "./directorio.css"
+import "./inicio.css"
 
 
 export default function Directorio() {

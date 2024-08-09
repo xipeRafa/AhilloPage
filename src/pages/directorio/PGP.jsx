@@ -1,6 +1,6 @@
 
 
-import "./parroquias.css";
+import "./PGP.css";
 
 import { useState } from "react";
 import imgX from './2.png'
@@ -8,7 +8,7 @@ import imgX from './2.png'
 
 
 
-export default function Inicio() {
+export default function PGP() {
 
 
   const[displayState, setDisplayState]=useState('1')

@@ -1,49 +1,13 @@
-import './contacto.css'
-// import ImgContacto from './contacto-min.png'
-
-// export default function Contacto() {
-//     return (<>
-//       <div className='contactoContainer'>
-
-//             <h4>ARZOBISPO, OBISPOS</h4>
-//           <h2>Provincia Eclesiástica de Hermosillo</h2>
-        
-//         <img src='https://www.arquidiocesisdehermosillo.org/images/arquidiocesis/Ruy_Rendon.jpg' />
-//         <img src='https://www.arquidiocesisdehermosillo.org/images/arquidiocesis/Felipe_Pozos.jpg' />
-//         <img src='https://www.arquidiocesisdehermosillo.org/images/jesus%20jose.png#joomlaImage://local-images/jesus%20jose.png?width=6245&height=8591' />
-//         <img src='https://www.arquidiocesisdehermosillo.org/images/arquidiocesis/Nogales.jpg' />
-        
-//       </div>
-//       <div className='contacto'>
-
-//  <img  src={ImgContacto} />
-// </div>
-
-     
-//    </> )
-//   }
-
-
-
-
+import './provincia.css'
 
 import img1 from './1.png'
 import img2 from './2.png'
-
 import img3 from './3.png'
 import img4 from './4.png'
 
-
-
-
-
 import { useState } from "react";
 
-
-
-
-
-export default function Contacto() {
+export default function Provincia() {
 
 
   const[displayState, setDisplayState]=useState('1')
@@ -69,7 +33,7 @@ export default function Contacto() {
               <img src={img4} />
             </div>             
             <div>
-                   <h2>Arzobispo de Hermosillo</h2>
+                   <h2>ARZOBISPO DE HERMOSILLO</h2>
                   <h3>Mons. Ruy Rendón Leal</h3>
                   <p>
                             arzobispo@arquidiocesisdehermosillo.org
