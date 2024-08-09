@@ -69,7 +69,7 @@ export default function Contacto() {
               <img src={img4} />
             </div>             
             <div>
-                   <h2>ARZOBISPO</h2>
+                   <h2>Arzobispo de Hermosillo</h2>
                   <h3>Mons. Ruy Rendón Leal</h3>
                   <p>
                             arzobispo@arquidiocesisdehermosillo.org
