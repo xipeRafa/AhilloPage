@@ -69,15 +69,13 @@ export default function Contacto() {
               <img src={img4} />
             </div>             
             <div>
-                   <h2>PAPA FRANCISCO</h2>
-                  <h3>Elección</h3>
+                   <h2>Mons. Ruy Rendón Leal</h2>
+                  <h3>Mons. Ruy Rendón Leal</h3>
                   <p>
-                            El 13 de marzo de 2013 los millones de cristianos católicos en todo el mundo recibían con 
-                            júbilo la noticia de la elección de su nuevo pontífice, 
-                            el cardenal Jorge Mario Bergoglio quien eligió como nombre: Francisco
+                            arzobispo@arquidiocesisdehermosillo.org
                   </p>
                    <button>
-                     BIOGRAFÍA
+                     Arquidiócesis de Hermosillo 
                    </button>
             </div>                    
         </div>
@@ -88,14 +86,13 @@ export default function Contacto() {
             </div>  
             
             <div>
-                   <h2>MONS. RUY RENDÓN LEAL</h2>
-                  <h3>Arzobispo de Hermosillo</h3>
+                   <h2>Mons. Rutilo Felipe Pozos Lorenzini</h2>
+                  <h3>Mons. Rutilo Felipe Pozos Lorenzini</h3>
                   <p>
-                           El 26 de abril de 2016 es nombrado por el PAPA Francisco como cuarto arzobispo
-                            de Hermosillo. Y tomó posesión de la arquidiócesis el 8 de junio de 2016.
+                           diocesisobrego@prodigy.net.mx
                   </p>
                    <button>
-                     ARZOBISPO RUY
+                     Diócesis de Cd. Obregón 
                    </button>
             </div> 
         </div>
@@ -107,17 +104,13 @@ export default function Contacto() {
                 <img src={img1}/>
             </div>             
             <div>
-                  <h2>MONS. JOSÉ ULISES MACIAS SALCEDO</h2>
-                  <h3>Arzobispo Emérito de Hermosillo</h3>
+                  <h2>Mons. Jesús José Herrera Quiñónez </h2>
+                  <h3>Mons. Jesús José Herrera Quiñónez </h3>
                   <p>
-                            Nació en León, Guanajuato, el 29 de octubre de 1940.
-                            Su ordenación sacerdotal fue en León, Guanajuato, el 10 de abril de 1966.
-                            Es nombrado obispo de la Diócesis de Mexicali por el Papa Juan Pablo II.
-                            Es nombrado tercer arzobispo de la Arquidiócesis de Hermosillo el 19 de agosto de 1996, por S.S Juan Pablo II.
-                            Su renuncia es aceptada el 26 de abril de 2016.
+                            info@diocesisdeculiacan.mx
                   </p>
                    <button>
-                     ARZOBISPO EMÉRITO
+                     Diócesis de Culiacán
                    </button>
 
             </div> 
@@ -130,17 +123,13 @@ export default function Contacto() {
                 <img src={img2}/>
             </div>             
             <div>
-                  <h2>MONS. JOSÉ ULISES MACIAS SALCEDO</h2>
-                  <h3>Arzobispo Emérito de Hermosillo</h3>
+                  <h2>Mons. José Leopoldo González González</h2>
+                  <h3>Mons. José Leopoldo González González</h3>
                   <p>
-                            Nació en León, Guanajuato, el 29 de octubre de 1940.
-                            Su ordenación sacerdotal fue en León, Guanajuato, el 10 de abril de 1966.
-                            Es nombrado obispo de la Diócesis de Mexicali por el Papa Juan Pablo II.
-                            Es nombrado tercer arzobispo de la Arquidiócesis de Hermosillo el 19 de agosto de 1996, por S.S Juan Pablo II.
-                            Su renuncia es aceptada el 26 de abril de 2016.
+                            diocesidenogalesar@gmail.com
                   </p>
                    <button>
-                     ARZOBISPO EMÉRITO
+                     Diócesis de Nogales
                    </button>
 
             </div> 
