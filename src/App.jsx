@@ -10,7 +10,8 @@ import {
 
 
 import Inicio from './pages/inicio/Inicio';
-import Directorio from './pages/inicio/Directorio'
+import Parroquias from './pages/inicio/parroquias/Parroquias'
+import Presbiterio from './pages/inicio/presbiterio/Presbiterio'
 
 import Informacion from './pages/informacion/Informacion';
 import Gobierno from './pages/gobierno/Gobierno'
@@ -44,7 +45,8 @@ export default function App() {
 
       <Routes>
         <Route path="/AhilloPage" exact element={<Inicio />} />
-        <Route path="/AhilloPage/directorio" element={<Directorio />} />
+            <Route path="/AhilloPage/parroquias" element={<Parroquias />} />
+            <Route path="/AhilloPage/presbiterio" element={<Presbiterio />} />
 
         <Route path="/AhilloPage/Informacion" element={<Informacion />} />
         <Route path="/AhilloPage/gobierno" element={<Gobierno />} />

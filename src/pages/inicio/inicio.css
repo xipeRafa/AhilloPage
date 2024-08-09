@@ -1,7 +1,8 @@
-.directorio {
+/*.directorio {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     width: 100%;
+    border: 1px solid red;
 }
 
 .itemDirectorio {
@@ -22,4 +23,50 @@
     color: rgba(51, 51, 51, 0.742);
     font-weight: bold;
     font-size: 20px;
+}
+*/
+
+
+.gallery{
+    width: 80%;
+    margin: 5% auto;
+    display: grid;
+    gap: 60px;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 23rem), 1fr));
+    border: 1px solid black;
+    grid-auto-flow: dense;
+    padding: 20px;
+    color: white;
+}
+
+@media (max-width:900px){
+    .gallery{
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+.gallery>div{
+/*    user-select: none;*/
+    cursor: pointer;
+    grid-column: span 1;
+    background-color: slategray;
+    padding: 20px;
+
+    display: flex;
+    height: 190px;
+  /*  background-image: url(https://www.arquidiocesisdehermosillo.org/media/com_mtree/images/cats/o/84_catedral.jpg);
+    background-size: contain;*/
+}
+
+.gallery>div>*{
+    margin: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+  /*  display: flex;
+    justify-content: space-around;
+     flex-direction: column;*/
 }

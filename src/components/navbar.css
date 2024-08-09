@@ -17,6 +17,7 @@
     text-transform: uppercase;
     padding: 10px;
     background-color: rgb(114, 150, 214);
+    user-select: none;
 }
 
 /* gris */
@@ -29,6 +30,7 @@
     background-color: rgba(33, 67, 100, .5);
     align-items: center;
     cursor: pointer;
+    user-select: none;
 }
 
 
