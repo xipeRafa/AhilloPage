@@ -10,14 +10,29 @@ import {
 
 
 import Inicio from './pages/inicio/Inicio';
-import Parroquias from './pages/inicio/parroquias/Parroquias'
+
 import Presbiterio from './pages/inicio/presbiterio/Presbiterio'
+import VidaConsagrada from './pages/inicio/vidaConsagrada/VidaConsagrada'
+import OrganismosLaicales from './pages/inicio/organismosLaicales/OrganismosLaicales'
+
+import Parroquias from './pages/inicio/parroquias/Parroquias'
+import InstitucionesEducativas from './pages/inicio/institucionesEducativas/InstitucionesEducativas'
+import ObrasSociales from './pages/inicio/obrasSociales/ObrasSociales'
+
+import Varios from './pages/inicio/varios/Varios'
+
+
+
+
 
 import Informacion from './pages/informacion/Informacion';
 import Gobierno from './pages/gobierno/Gobierno'
 
 import PGP from './pages/pgp/PGP';
 import Provincia from './pages/provincia/Provincia'
+
+
+
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -29,6 +44,7 @@ import Footer from './components/Footer';
 
 
 export default function App() {
+
   const location = useLocation();
   console.log(location.pathname);
 
@@ -45,8 +61,17 @@ export default function App() {
 
       <Routes>
         <Route path="/AhilloPage" exact element={<Inicio />} />
-            <Route path="/AhilloPage/parroquias" element={<Parroquias />} />
             <Route path="/AhilloPage/presbiterio" element={<Presbiterio />} />
+
+            <Route path="/AhilloPage/vidaConsagrada" element={<VidaConsagrada />} />
+            <Route path="/AhilloPage/organismosLaicales" element={<OrganismosLaicales />} />
+            <Route path="/AhilloPage/parroquias" element={<Parroquias />} />
+
+            <Route path="/AhilloPage/institucionesEducativas" element={<InstitucionesEducativas />} />
+            <Route path="/AhilloPage/obrasSociales" element={<ObrasSociales />} />
+            <Route path="/AhilloPage/varios" element={<Varios />} />
+
+
 
         <Route path="/AhilloPage/Informacion" element={<Informacion />} />
         <Route path="/AhilloPage/gobierno" element={<Gobierno />} />

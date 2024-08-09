@@ -4,7 +4,7 @@
 import './vidaConsagrada.css'
 
 
-export default function vidaConsagrada() {
+export default function VidaConsagrada() {
 	return(
 			<>
 				<p>vidaConsagrada</p>
