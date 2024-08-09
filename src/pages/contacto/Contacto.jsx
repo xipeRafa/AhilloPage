@@ -69,7 +69,7 @@ export default function Contacto() {
               <img src={img4} />
             </div>             
             <div>
-                   <h2>Mons. Ruy Rendón Leal</h2>
+                   <h2>ARZOBISPO</h2>
                   <h3>Mons. Ruy Rendón Leal</h3>
                   <p>
                             arzobispo@arquidiocesisdehermosillo.org
@@ -86,7 +86,7 @@ export default function Contacto() {
             </div>  
             
             <div>
-                   <h2>Mons. Rutilo Felipe Pozos Lorenzini</h2>
+                   <h2>OBISPO</h2>
                   <h3>Mons. Rutilo Felipe Pozos Lorenzini</h3>
                   <p>
                            diocesisobrego@prodigy.net.mx
@@ -104,7 +104,7 @@ export default function Contacto() {
                 <img src={img1}/>
             </div>             
             <div>
-                  <h2>Mons. Jesús José Herrera Quiñónez </h2>
+                  <h2>OBISPO </h2>
                   <h3>Mons. Jesús José Herrera Quiñónez </h3>
                   <p>
                             info@diocesisdeculiacan.mx
@@ -123,7 +123,7 @@ export default function Contacto() {
                 <img src={img2}/>
             </div>             
             <div>
-                  <h2>Mons. José Leopoldo González González</h2>
+                  <h2>OBISPO</h2>
                   <h3>Mons. José Leopoldo González González</h3>
                   <p>
                             diocesidenogalesar@gmail.com

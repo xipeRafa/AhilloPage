@@ -44,6 +44,10 @@
 	.buttonsContainer{
 		flex-direction: column;
 	}
+	.buttonsContainer>button{
+		width: 100%;
+		padding: 100px;
+	}
     .displayX{
     	flex-direction: column;
     }
@@ -86,7 +90,7 @@
 
 .bg-dark{
 	color: navy;
-	font-weight: 600;
+
 }
 
 
