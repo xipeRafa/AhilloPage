@@ -50,6 +50,10 @@ export default function Contacto() {
 
   return (
     <div className='inicioContainer'>
+        <div className='titulo'>
+            <h4>ARZOBISPO, OBISPOS</h4>
+            <h2>Provincia Eclesiástica de Hermosillo</h2>
+        </div>
 
 
         <div className='buttonsContainer'>
