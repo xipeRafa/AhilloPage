@@ -79,16 +79,18 @@ export default function App() {
       <br />
 
       <Routes>
+
         <Route path="/AhilloPage" exact element={<Inicio />} />
-            <Route path="/AhilloPage/presbiterio" element={<Presbiterio />} />
 
-            <Route path="/AhilloPage/vidaConsagrada" element={<VidaConsagrada />} />
-            <Route path="/AhilloPage/organismosLaicales" element={<OrganismosLaicales />} />
-            <Route path="/AhilloPage/parroquias" element={<Parroquias arrPadres={arrPadres}/>} />
+            <Route path="/AhilloPage/presbiterio"             element={<Presbiterio         arrPadres={arrPadres} />} />
 
-            <Route path="/AhilloPage/institucionesEducativas" element={<InstitucionesEducativas />} />
-            <Route path="/AhilloPage/obrasSociales" element={<ObrasSociales />} />
-            <Route path="/AhilloPage/varios" element={<Varios />} />
+            <Route path="/AhilloPage/vidaConsagrada"          element={<VidaConsagrada      arrPadres={arrPadres} />} />
+            <Route path="/AhilloPage/organismosLaicales"      element={<OrganismosLaicales  arrPadres={arrPadres} />} />
+            <Route path="/AhilloPage/parroquias"              element={<Parroquias          arrPadres={arrPadres} />} />
+
+            <Route path="/AhilloPage/institucionesEducativas" element={<InstitucionesEducativas   arrPadres={arrPadres} />} />
+            <Route path="/AhilloPage/obrasSociales"           element={<ObrasSociales             arrPadres={arrPadres} />} />
+            <Route path="/AhilloPage/varios"                  element={<Varios                    arrPadres={arrPadres} />} />
 
 
 
@@ -99,6 +101,7 @@ export default function App() {
         <Route path="/AhilloPage/provincia" element={<Provincia />} />
 
         <Route path="*" element={ <Inicio />} />
+
       </Routes>
 
       <Footer/>

@@ -4,10 +4,18 @@
 import './presbiterio.css'
 
 
-export default function Presbiterio() {
+export default function Presbiterio({arrPadres}) {
 	return(
 			<>
-				<p>prebiterio</p>
+				{
+					arrPadres.filter(ele => ele.clasificacion === 'otro').map((el, i)=>(
+							<div key={i}>
+							<div style={{ backgroundImage: `url(${el.imgUrl})`}} className="imgVida" />
+								<p>padres</p>
+							</div>	
+
+					))
+				}
 			</>
 	)
 }

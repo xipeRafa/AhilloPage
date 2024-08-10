@@ -4,10 +4,18 @@
 import './obrasSociales.css'
 
 
-export default function ObrasSociales() {
+export default function ObrasSociales({arrPadres}) {
 	return(
 			<>
-				<p>obrasSociales</p>
+				{
+					arrPadres.filter(ele => ele.clasificacion === 'obra social').map((el, i)=>(
+							<div key={i}>
+							<div style={{ backgroundImage: `url(${el.imgUrl})`}} className="imgVida" />
+								<p>{el.clasificacion}</p>
+							</div>	
+
+					))
+				}
 			</>
 	)
 }

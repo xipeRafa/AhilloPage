@@ -4,10 +4,21 @@
 import './organismosLaicales.css'
 
 
-export default function OrganismosLaicales() {
+export default function OrganismosLaicales({arrPadres}) {
+
+console.log(arrPadres.filter(ele => ele.clasificacion === 'organismo laical'))
+
 	return(
 			<>
-				<p>organismosLaicales</p>
+				{
+					arrPadres.filter(ele => ele.clasificacion === 'organismo laical').map((el, i)=>(
+							<div key={i}>
+							<div style={{ backgroundImage: `url(${el.imgUrl})`}} className="imgVida" />
+								<p>{el.clasificacion}</p>
+							</div>	
+
+					))
+				}
 			</>
 	)
 }
