@@ -18,7 +18,7 @@ export default function VidaConsagrada({arrPadres}) {
 
 
         <div className='parroquiasButtons'>
-            <button onClick={()=>{ setParroquiaState('vida consagrada femenina')}}>Vida Consagrada Femenina</button>
+            <button onClick={()=>{ setParroquiaState('vida consagrada femenina')}}> Vida Consagrada Femenina</button>
             <button onClick={()=>{ setParroquiaState('vida consagrada masculina')}}>Vida Consagrada Masculina</button>
         </div>
 
