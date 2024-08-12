@@ -29,11 +29,11 @@
 
 .gallery{
     width: 80%;
-    margin: 5% auto;
+    margin: 3% auto;
     display: grid;
     gap: 50px;
     grid-auto-rows: auto;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 23rem), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
     grid-auto-flow: dense;
     padding: 20px;
 }
@@ -59,15 +59,16 @@
     height: 200px;
   /*  background-image: url(https://www.arquidiocesisdehermosillo.org/media/com_mtree/images/cats/o/84_catedral.jpg);
     background-size: contain;*/
+
 }
 
 .gallery>div>*{
     margin: auto;
     color: white;
-    font-size: 34px;
+    font-size: 28px;
     text-shadow: #FC0 1px 0 10px;
     text-shadow: 1px 1px 4px black, 0 0 16px black, 0 0 10px black;
-    letter-spacing:.8px;
+
 
   /*  display: flex;
     justify-content: space-around;
