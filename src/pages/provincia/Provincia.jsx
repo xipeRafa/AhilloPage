@@ -20,7 +20,7 @@ export default function Provincia() {
         </div>
 
 
-        <div className='buttonsContainer'>
+        <div className='buttonsContainerp'>
             <button className={displayState === '1' ? 'bg-dark' : 'bg-ligth'} onClick={()=>setDisplayState('1')}>Mons Ruy Rendon</button>
             <button className={displayState === '2' ? 'bg-dark' : 'bg-ligth'} onClick={()=>setDisplayState('2')}>Mons Rutilo Felipe</button>
             <button className={displayState === '3' ? 'bg-dark' : 'bg-ligth'} onClick={()=>setDisplayState('3')}>Mons Jesus Jose Herrera</button>

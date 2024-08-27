@@ -6,16 +6,18 @@
 .buttonsContainer{
 	display: flex;
 	justify-content: space-evenly;
-	margin-bottom: 50px!important;
+	margin-bottom: 58px;
 }
 
 
 
 .buttonsContainer button{
-	min-width: 160px;
+	width: 200px;
 	padding: 10px 0;
 	font-size: 12px;
 	letter-spacing: .4px;
+	border: 1px solid rgba(111,111,111, .4);
+	border-radius: 6px;
 }
 
 .d-none{
@@ -35,9 +37,16 @@
 	width: 40%;
 }
 
-.displayX div img{
+
+
+.imgX{
 	width: 80%;
+	margin: 50px 0;
+	max-width: 1280px;
+	transform: translate(-50%);
+	margin-left: 50%;
 }
+
 
 @media (max-width: 1000px) {
 	.buttonsContainer{
@@ -49,6 +58,9 @@
     .displayX div{
     	width: 100%;
     }
+    .imgX{
+		width: 100%;
+	}
 }
 
 
@@ -85,7 +97,7 @@
 
 .bg-dark{
 	color: navy;
-	font-weight: 600;
+
 }
 
 
@@ -93,14 +105,6 @@
 	color: gray;
 }
 
-.imgX{
-	width: 100%;
-	margin: 50px 0;
-	max-width: 1280px;
-	  transform: translate(-50%);
-	  margin-left: 50%;
-
-}
 
 
 
