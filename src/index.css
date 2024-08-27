@@ -95,10 +95,12 @@ a{
 	box-sizing: border-box;
 }
 
-.borderX:nth-child(3n+1) p{
-    border-bottom: 1px solid rgb(175, 187, 199);
+.borderX:nth-child(3n+2) p{
+    border-bottom: .5px solid rgba(108, 108, 108, 0.5);
     padding-bottom: 16px;
 }
+
+
 .h1-Arquidiócesis{
 	font-size: 36px;
 	color: #ad8a1f;
