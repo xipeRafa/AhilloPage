@@ -14,9 +14,11 @@
 .buttonsContainer button{
 	width: 200px;
 	padding: 10px 0;
-	margin-bottom: 10px;
+	margin-bottom: 8px;
 	font-size: 12px;
 	letter-spacing: .4px;
+	border: 1px solid rgba(111,111,111, .4);
+	border-radius: 6px;
 }
 
 .d-none{
@@ -34,10 +36,14 @@
 
 .displayX div{
 	width: 40%;
+	background-color: white;
+    box-shadow: inset 0 -4px 0 0 gainsboro;
 }
 
 .displayX div img{
-	width: 100%;
+	width: 80%;
+	margin-left: 20%;
+	
 }
 
 @media (max-width: 1000px) {
@@ -46,6 +52,7 @@
 	}
 	.buttonsContainer>button{
 		width: 100%;
+		margin-bottom: 26px;
 	}
     .displayX{
     	flex-direction: column;
@@ -53,17 +60,23 @@
     .displayX div{
     	width: 100%;
     }
+    .displayX div img{
+		width:100%;
+		margin-left: 0;
+	}
 }
 
 
 .displayX div:nth-child(2) *{
 	margin:40px ;
+
 }
 
 .displayX div:nth-child(2) h2{
 	font-size: 12px;
 	color: #ad8a1f;
 	font-weight: 500;
+
 }
 .displayX div:nth-child(2) h3{
 	font-size: 18px;
