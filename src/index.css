@@ -28,7 +28,7 @@ a{
 	box-sizing: border-box;
 }
 
-.borderX:nth-child(3n+2) p{
+.borderX:nth-child(3n+3) p{
     border-bottom: .5px solid rgba(108, 108, 108, 0.5);
     padding-bottom: 16px;
 }
