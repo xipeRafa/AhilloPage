@@ -96,14 +96,14 @@ export default function Parroquias({arrPadres}) {
               Nombre:<span> {item.nombre}</span>
             </p>
             <p>
-              Parroco:<span> {item.parroco}</span>
+              Párroco:<span> {item.parroco}</span>
             </p>
             <p>
               Vicario:<span> {item.vicario}</span>
             </p>
 
             <p>
-              Clasificacion:<span> {item.clasificacion}</span>
+              Clasificación:<span> {item.clasificacion}</span>
             </p>
             <p>
               Decanato:<span> {item.decanato}</span>
@@ -115,13 +115,13 @@ export default function Parroquias({arrPadres}) {
               Confesiones:<span> {item.confesiones}</span>
             </p>
             <p>
-              Direccion:<span> {item.direccion}</span>
+              Dirección:<span> {item.direccion}</span>
             </p>
             <p>
               Horario de Oficina:<span> {item.oficina}</span>
             </p>
             <p>
-              Telefono:<span> {item.telefono}</span>
+              Teléfono:<span> {item.telefono}</span>
             </p>
 
             <p>
@@ -158,19 +158,19 @@ export default function Parroquias({arrPadres}) {
             <hr />
 
             <p>
-              Catesismo Adultos: <span> {item.catesismoAdultos}</span>
+              Catequesis Adultos: <span> {item.catesismoAdultos}</span>
             </p>
             <p>
-              Catesismo Niños: <span> {item.catesismoNinos}</span>
+              Catequesis Niños: <span> {item.catesismoNinos}</span>
             </p>
 
             <hr />
 
             <p>
-              Platicas Prematrimoniales:<span> {item.preMatrimoniales}</span>
+              Catequesis Prematrimoniales:<span> {item.preMatrimoniales}</span>
             </p>
             <p>
-              Platicas Prebautismales:<span> {item.preBautismales}</span>
+              Catequesis Prebautismales:<span> {item.preBautismales}</span>
             </p>
             <p>
               Eventos: <span> {item.eventos}</span>
@@ -187,14 +187,14 @@ export default function Parroquias({arrPadres}) {
 
             {Object.keys(item.centros).sort().map((el, i) => (
                 <div key={i + "koko"} className='borderX'>
-                  <p>{el.slice(2).replace("_", " ").replace("_", " ").replace("_", " ")}:<span> {item.centros[el]}</span></p>
+                  <p>{el.slice(2).replace("_", " ").replace("_", " ").replace("_", " ").replace('Direccion', 'Dirección')}:<span> {item.centros[el]}</span></p>
                 </div>
               ))}
 
 
             {Object.keys(item.grupos).sort().map((el, i) => (
                 <div key={i + "kok"} className='borderX'>
-                  <p>{el.slice(2).replace("_", " ").replace("_", " ").replace("_", " ")}:<span> {item.grupos[el]}</span></p>
+                  <p>{el.slice(2).replace("_", " ").replace("_", " ").replace("_", " ").replace('Direccion', 'Dirección')}:<span> {item.grupos[el]}</span></p>
                 </div>
               ))}
 
