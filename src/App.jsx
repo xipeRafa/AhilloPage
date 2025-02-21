@@ -58,16 +58,19 @@ export default function App() {
 
   const [arrPadres, setArrPadres] = useState([])
 
-   useEffect(() => {
+  useEffect(() => {
+    
     const data = collection(db, "auctions");
     getDocs(data).then((resp) => {
       //console.log(resp.docs[0].id)
       //console.log(resp.docs[0].data())
       setArrPadres(resp.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     });
+
+    
   }, []);
 
-
+window.scrollTo(0,0)
   return (
     <div className='containerApp'>
       <p className='p-Bienvenidos'>Directorio de la Arquidiócesis de Hermosillo</p>

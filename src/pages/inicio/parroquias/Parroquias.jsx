@@ -51,7 +51,6 @@ export default function Parroquias({arrPadres}) {
     <div className="parroquias">
 
 
-
         <div className='parroquiasButtons'>
             <button onClick={()=>{setSelectState('clasificacion'), setParroquiaState('parroquia')}}>Parroquias</button>
             <button onClick={()=>{setSelectState('clasificacion'), setParroquiaState('cuasiparroquia')}}>Cuasiparroquias</button>
@@ -124,9 +123,9 @@ export default function Parroquias({arrPadres}) {
               Teléfono:<span> {item.telefono}</span>
             </p>
 
-            <p className={!item.sitioWeb ? 'display-none' : ''}>
-              <a href={item.sitioWeb} target='_blank'> Sitio Web </a>
-            </p>
+            <div className={!item.sitioWeb ? 'display-none' : ''}>
+              <a href={item.sitioWeb} target='_blank'> Sitio Web <div className='rotate'>⇱</div></a>
+            </div>
 
             <hr />
 

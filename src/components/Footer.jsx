@@ -30,8 +30,8 @@ export default function Footer() {
 
 
 
-            <div class="container__footer">
-                <div class="box__footer tar">
+            <div className="container__footer">
+                <div className="box__footer tar">
 
 <a href="https://www.google.com">Historia</a>
 <a href="#">Territorio</a>
@@ -39,7 +39,7 @@ export default function Footer() {
 <a href="#"> Gobierno</a>
 </div>
                    
-                    <div class="box__footer tar">
+                    <div className="box__footer tar">
 
                         <a href="https://www.google.com">Contacto</a>
                         <a href="#">Aviso de Privacidad</a>
@@ -48,7 +48,7 @@ export default function Footer() {
                         <a href="#">CELAM</a>
                     </div>
 
-                    <div class="box__footer tac">
+                    <div className="box__footer tac">
                          <a href="#">Curia Administrativa</a>
                         <a href="#"> Curia de Justicia</a>
                         <a href="#">Curia Consultiva</a>
@@ -56,20 +56,20 @@ export default function Footer() {
                         
                     </div>
 
-                    <div class="box__footer">
+                    <div className="box__footer">
 
                         <a href="#">
                             {" "}
-                            <i class="fab fa-facebook-square"></i> Facebook <span className='redSocial'> (Arquidiócesis)</span>
+                            <i className="fab fa-facebook-square"></i> Facebook <span className='redSocial'> (Arquidiócesis)</span>
                         </a>
                         <a href="#">
-                            <i class="fab fa-twitter-square"></i> Twitter <span className='redSocial'>(Arquidiócesis)</span>  
+                            <i className="fab fa-twitter-square"></i> Twitter <span className='redSocial'>(Arquidiócesis)</span>  
                         </a>
                         <a href="#">
-                            <i class="fab fa-youtube"></i> Youtube
+                            <i className="fab fa-youtube"></i> Youtube
                         </a>
                         <a href="#">
-                            <i class="fab fa-instagram-square"></i> Instagram
+                            <i className="fab fa-instagram-square"></i> Instagram
                         </a>
                     </div>
                 </div>
@@ -91,13 +91,13 @@ export default function Footer() {
 
 
                 
-                <div class="container__footer">
-                    <div class="box__footer">
-                        <div class="logo">
+                <div className="container__footer">
+                    <div className="box__footer">
+                        <div className="logo">
                             <img src="https://www.arquidiocesisdehermosillo.org/images/chayo/AH-08.png" alt="fff" />
                         </div>
                     </div>
-                    <div class="box__footer tar">
+                    <div className="box__footer tar">
 
                         <a href="#">Episcopado Mexicano</a>
                         <a href="#">Vatican News Español</a>
@@ -105,7 +105,7 @@ export default function Footer() {
                         <a href="#"> Seminario Mayor</a>
                     </div>
 
-                    <div class="box__footer tac">
+                    <div className="box__footer tac">
 
                         <a href="#">Vicaría de Pastoral </a>
                         <a href="#">Inicio</a>
@@ -113,21 +113,21 @@ export default function Footer() {
                         <a href="#">----</a>
                     </div>
 
-                    <div class="box__footer">
+                    <div className="box__footer">
 
                         
                         <a href="#">
-                            <i class="fab fa-facebook-square"></i> Facebook <span className='redSocial'>(Arzobispo)</span>
+                            <i className="fab fa-facebook-square"></i> Facebook <span className='redSocial'>(Arzobispo)</span>
                         </a>
                         
                         <a href="#">
-                            <i class="fab fa-twitter-square"></i> Twitter <span className='redSocial'>(Arzobispo)</span>
+                            <i className="fab fa-twitter-square"></i> Twitter <span className='redSocial'>(Arzobispo)</span>
                         </a>
                         <a href="#">
-                            <i class="fab fa-youtube"></i> Youtube 
+                            <i className="fab fa-youtube"></i> Youtube 
                         </a>
                         <a href="#">
-                            <i class="fab fa-instagram-square"></i> Instagram
+                            <i className="fab fa-instagram-square"></i> Instagram
                         </a>
                     </div>
                 </div>
@@ -143,7 +143,7 @@ export default function Footer() {
 
 
 
-                <div class="box__copyright">
+                <div className="box__copyright">
                     <p>
                         Todos los derechos reservados © 2024
                     </p>
