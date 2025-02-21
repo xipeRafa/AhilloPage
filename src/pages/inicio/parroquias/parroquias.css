@@ -27,9 +27,6 @@ parroquias {
 	padding: 10px;
 }
 
-
-
-
 .parroquiasButtons{
 	display: flex;
 	justify-content: space-evenly;
@@ -42,6 +39,10 @@ parroquias {
 	margin-bottom: 20px!important;
 	padding: 4px 0;
 	color: gray;
+}
+
+.display-none{
+	display: none;
 }
 
 

@@ -124,8 +124,8 @@ export default function Parroquias({arrPadres}) {
               Teléfono:<span> {item.telefono}</span>
             </p>
 
-            <p>
-              Sitio Web:<span> {item.sitioWeb}</span>
+            <p className={!item.sitioWeb ? 'display-none' : ''}>
+              <a href={item.sitioWeb} target='_blank'> Sitio Web </a>
             </p>
 
             <hr />
